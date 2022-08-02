@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-html { 
+html {
     margin-top: 150px;
 }
+
 h1 {
     text-align: center;
 }
@@ -15,7 +16,13 @@ h1 {
     font-size: 2rem;
 }
 
-table, tr {
+#tela {
+    background-color: rgba(0, 0, 255, 0.463);
+    height: 100px;
+}
+
+table,
+tr {
     background-color: rgb(237, 237, 254);
 }
 
@@ -28,7 +35,8 @@ table, tr {
     cursor: pointer;
 }
 
-#back-btn, #ac-btn {
+#back-btn,
+#ac-btn {
     background-color: rgba(255, 166, 0, 0.533);
 }
 
@@ -37,29 +45,39 @@ footer {
 }
 
 /* Seletor Personalizado para todos os col (incluindo col-md etc..) */
-.row > .col,
+.row>.col,
 .row [class^=col-] {
-text-align: center;
+    text-align: center;
 }
 
 /* Breakpoints */
 /* xs */
 @media (min-width: 576px) {
-* {
-    font-size: 22px;
+    * {
+        font-size: 22px;
+    }
+    #tela {
+        height: 120px;
+    }
 }
-}
+
 /* sm */
 @media (min-width: 768px) {
     * {
         font-size: 32px;
     }
+
+    #tela {
+        height: 150px;
+    }
 }
+
 /* md */
 @media (min-width: 992px) {
-    
+    #tela {
+        height: 200px;
+    }
 }
+
 /* xl */
-@media (min-width: 1200px) {
-    
-}
+@media (min-width: 1200px) {}
